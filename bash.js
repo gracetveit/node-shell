@@ -12,9 +12,9 @@ process.stdin.on('data', (data) => {
         pwd()
     } else if(cmd === 'ls') {
         ls()
-    } else if(cmd.includes('cat')) {
+    } else if(cmd.match(/^cat\s.+$/)) {
         cat(cmd.slice(4));
-    } else if(cmd.includes('curl')) {
+    } else if(cmd.match(/^cat\s.+$/)) {
         curl(cmd.slice(4))
     }
     else {
