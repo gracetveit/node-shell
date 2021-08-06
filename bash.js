@@ -18,5 +18,4 @@ process.stdin.on('data', (data) => {
         process.stdout.write('You Typed: ' + cmd);
         process.stdout.write('\nprompt > ');
     }
-
 });
