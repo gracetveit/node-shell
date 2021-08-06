@@ -5,7 +5,7 @@ const fs = require('fs');
  * @param {string} fileNa - Filename
  */
 module.exports = function cat(fileNa) {
-    fs.readFile(`./${fileNa}`, 'utf8', (err, data) => {
+    fs.readFile(`${fileNa}`, 'utf8', (err, data) => {
         if(err){
             throw err;
         }
